@@ -1,31 +1,20 @@
-<section class="heading-bar">
-    <div class="container">
-        <h1 class="text-center">ABL Online Library - Book List</h1>
-    </div>
-</section>
-
-
-<div class="main-wrapper">
-    <div class="products-wrapper">
-        <div class="row-group">
-            <div class="col col-2">
-                <div class="book-items">
-                    <div class="col" *ngFor="let book of books">
-                        <div id="book-card" data-id="{{book.id}}" class="book-card">
-                            <figure id="book-image" class="image">
-                                <img src="/assets/icons/book-pic.jpg"/>
-                            </figure>
-                            <p id="book-title-o" class="book-name">{{book.title}}</p>
-                            <p id="book-author-o" class="small-text">{{book.author}}</p>
-                            <p id="book-desc-o" class="small-text">{{book.description}}</p>
-                            <div class="button-section">
-                                <button id="btn-wish-o" class="btn btn-secondary">WISHLIST</button>
-                                <button id="btn-rent-o" class="btn btn-primary">RENT</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<table id="userList">
+    <thead>
+        <tr>
+            <th>Sr.No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Question</th>
+            <th>Answer</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of userList">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.data?.question}}</td>
+            <td>{{user.data?.question}}</td>
+        </tr>
+    </tbody>
+</table>

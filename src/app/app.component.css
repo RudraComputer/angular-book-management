@@ -1,14 +1,20 @@
-.col.col-2{
-    max-width: 100%;
+#userList {
+    margin:20px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 90%; 
+  padding: 10px; 
 }
-.book-items {
-    display: flex;
-    flex-wrap: wrap;
+td{
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
-.book-items .col {
-    width: calc(33.33% - 20px); /* Adjust the width as needed */
-    margin: 10px;
-    box-sizing: border-box;
-    flex-basis: auto;
-}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#4288fd;
+    color: white;
+    border: 1px solid #4288fd;
+  }
