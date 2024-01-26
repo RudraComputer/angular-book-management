@@ -1,0 +1,14 @@
+.col.col-2{
+    max-width: 100%;
+}
+.book-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book-items .col {
+    width: calc(33.33% - 20px); /* Adjust the width as needed */
+    margin: 10px;
+    box-sizing: border-box;
+    flex-basis: auto;
+}
